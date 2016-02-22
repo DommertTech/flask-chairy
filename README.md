@@ -1,7 +1,10 @@
 # flask-chairy
 Flask-Chairy is a wrapper for PeeWee database
 
+(http://hellogiggles.com/wp-content/uploads/2015/02/24/Best-TV-Chairs-Peewee-Playhouse-Chairy.jpg)
 
+
+Here is a snippet to setup a db connection. Will add docs and samples for MySQL and others
 ```python
 from flask import Flask
 from peewee import *
