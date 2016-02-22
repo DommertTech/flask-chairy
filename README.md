@@ -27,3 +27,25 @@ class Blog(db.Model):
     name = CharField()
     # .. etc
 ```
+
+
+Other examples
+
+To connect to MySQL using authentication:
+```
+DATABASE = {
+    'name': 'my_database',
+    'engine': 'peewee.MySQLDatabase',
+    'user': 'db_user',
+    'passwd': 'secret password',
+}
+```
+If using a multi-threaded WSGI server:
+```
+DATABASE = {
+    'name': 'foo.db',
+    'engine': 'peewee.SqliteDatabase',
+    'threadlocals': True,
+}
+```
+
