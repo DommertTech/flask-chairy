@@ -1,8 +1,8 @@
 # flask-chairy
-Flask PeeWee Database extension 
+Flask-Chairy is a wrapper for PeeWee database
 
 
-
+```python
 from flask import Flask
 from peewee import *
 
@@ -23,3 +23,4 @@ db = Database(app)
 class Blog(db.Model):
     name = CharField()
     # .. etc
+```
